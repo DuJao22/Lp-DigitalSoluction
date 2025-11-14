@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-brand-gray-900 text-brand-gray-100 font-sans antialiased;
+  }
+  h1, h2, h3 {
+    @apply text-balance;
+  }
+}
+
+@layer components {
+  .countdown-timer {
+    font-variant-numeric: tabular-nums;
+  }
+  .animated {
+    opacity: 0;
+  }
+}
